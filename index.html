@@ -343,6 +343,7 @@
       display: grid;
       grid-template-columns: 1.7rem minmax(0, 1fr);
       gap: .35rem;
+      align-items: start;
       min-height: 0;
       padding: 0;
       counter-increment: announcement;
@@ -359,7 +360,10 @@
       font-family: inherit;
       font-size: inherit;
       font-weight: 700;
+      line-height: 1.6;
     }
+
+    .announcements li > span { min-width: 0; line-height: 1.6; }
 
     .announcements li:hover { transform: none; background: transparent; }
 
@@ -504,10 +508,10 @@
           <li class="announcement-item">
             <div><strong>광고</strong></div>
             <ol class="announcements">
-              <li>예식 후 가족 사진 촬영이 있을 예정입니다.<br>하객 여러분께서는 식사 장소로 이동해 주시기 바랍니다.</li>
-              <li>식사 장소는 드마리스 부천점(상동)입니다.<br>주소: 경기도 부천시 길주로 71, 3층 (교회에서 약 30분 소요)</li>
-              <li>차량이 없으신 하객분들께서는<br>안내에 따라 모여 주시면 감사하겠습니다.</li>
-              <li>귀한 걸음 해주신 분들을 위해 식사 장소에서<br>특별한 경품 추첨이 준비되어 있사오니,<br>빠짐없이 참석하셔서 즐거운 시간 보내시길 바랍니다.</li>
+              <li><span>예식 후 가족 사진 촬영이 있을 예정입니다.<br>하객 여러분께서는 식사 장소로 이동해 주시기 바랍니다.</span></li>
+              <li><span>식사 장소는 드마리스 부천점(상동)입니다.<br>주소: 경기도 부천시 길주로 71, 3층 (교회에서 약 30분 소요)</span></li>
+              <li><span>차량이 없으신 하객분들께서는<br>안내에 따라 모여 주시면 감사하겠습니다.</span></li>
+              <li><span>귀한 걸음 해주신 분들을 위해 식사 장소에서<br>특별한 경품 추첨이 준비되어 있사오니,<br>빠짐없이 참석하셔서 즐거운 시간 보내시길 바랍니다.</span></li>
             </ol>
           </li>
         </ol>
